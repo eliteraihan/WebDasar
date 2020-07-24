@@ -6,9 +6,11 @@
 } */
 
 /* Menetapkan float pada #content dan aside */
+
 /* Dengan menerapkan nilai border-box pada properti box-sizing, kita dapat
 menentukan dimensi kotak dengan tepat, tanpa dipengaruhi oleh padding dan
 border. */
+
 * {
     box-sizing: border-box;
 }
@@ -106,4 +108,11 @@ nav li {
     max-height: 300px;
     object-fit: cover;
     object-position: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
 }
