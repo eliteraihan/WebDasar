@@ -21,6 +21,12 @@ body {
     padding: 0;
 }
 
+/* header, elemen induk nav, dibikin display inline,
+agar navigasi dapat menempel pada seluruh halaman */
+header {
+    display: inline;
+}
+
 main {
     padding: 20px;
 }
@@ -68,6 +74,10 @@ footer {
 nav {
     background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0;
+    /* Nilai top diperlukan agar ketika pengguna melakukan scrolling, elemen
+    navigasi tetap berada di atas jendela browser.  */
 }
 
 nav a {
