@@ -5,15 +5,23 @@
     border: 1px solid red
 } */
 
+/* Menetapkan float pada #content dan aside */
+/* Dengan menerapkan nilai border-box pada properti box-sizing, kita dapat
+menentukan dimensi kotak dengan tepat, tanpa dipengaruhi oleh padding dan
+border. */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
- }
+}
 
- main {
+main {
     padding: 20px;
- }
+}
 
 h2 {
     color: #00a2c6
@@ -21,6 +29,22 @@ h2 {
 
 h3 {
     color: #00a2c6
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
 }
 
 footer {
