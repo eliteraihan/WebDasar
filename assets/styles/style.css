@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+/* box element */
+/* * {
+    border: 1px solid red
+} */
+
 body {
     font-family: 'Quicksand', sans-serif;
 }
